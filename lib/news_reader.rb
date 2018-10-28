@@ -1,5 +1,4 @@
 require "news_reader/version"
-
-module NewsReader
-  # Your code goes here...
-end
+require_relative "./news_reader/cli"
+require_relative "./news_reader/article"
+require_relative "./news_reader/scraper"
