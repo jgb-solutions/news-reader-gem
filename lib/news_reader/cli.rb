@@ -1,11 +1,10 @@
 class NewsReader::CLI
     APP_NAME = "News Reader CLI"
     def self.start
-        NewsReader::Scraper.fetch_articles
+        NewsReader::Article.import(NewsReader::Scraper.fetch_articles)
 
-        puts "-----------------------------------"
-        puts "Welcome to the News Reader CLI app!"
-        puts "-----------------------------------"
+        puts "----- Welcome to the News Reader CLI app! ----"
+        puts "--"
 
         input = nil
         while input != "exit"
@@ -26,15 +25,16 @@ class NewsReader::CLI
     end
 
     def self.menu
-        puts "---------------"
+        puts "\n"
+        puts "------- Menu --------"
         puts "Please choose an option from the menu below:"
         puts "   - Type `list` to list all the articles"
         puts "   - Type `read` to read an article"
         puts "   - Type `about` to know more about #{APP_NAME}"
-        puts "---------------"
+        puts "-"
     end
 
     def self.about
-        p "about info"
+        puts "News Reader CLI app by JGB Solutions. Visit https://jgb.solutions for more."
     end
 end

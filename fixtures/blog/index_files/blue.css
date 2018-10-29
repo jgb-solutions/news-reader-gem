@@ -1,0 +1,11 @@
+@charset "UTF-8";
+/* Color Fucsia CSS */
+.blue .prev-featured:hover,.blue .next-featured:hover,.blue .s-ico,.blue .sl-ico,.blue .progress-bar .skill-in,.blue .ch-grid,.blue .f-ico,.blue .car-prev,.blue .car-next,.blue .car-prev-2,.blue .car-next-2,.blue .scrollup,.blue .list-dot,.blue .p-two {background-color: #00aeef;}
+.blue .menu a:hover,.blue #nav .current a,.blue .f-image .f-category,.blue .t-photo .f-category,.blue .half-content a,.blue .contour-btn:hover, .blue .second-title span {color: #00aeef;}
+.blue .f-image .f-category {background-position: 0 0;}
+.blue .t-photo .f-category {background-position: 0 -44px;}
+.blue .f-single:hover .f-info,.blue .btn-featured,.blue .spacer,.blue .folio-btn:hover,.blue .p-roll,.blue .contour-btn,.blue .folio-btn.selected,.blue .t-spacer,.blue .t-element:hover .t-data,.blue .logo span em{background: #00aeef;}
+.blue .logo span{background: #b6e7fa;}
+.blue .controller ul li:hover,.blue .selected,.blue .controller-2 ul li:hover,.blue .controller-3 ul li:hover{border: 2px solid #00aeef !important; background: #00aeef !important;}
+.blue .buy-logo{border-color: #00aeef;}
+.blue ::selection{background-color: #00aeef;}
