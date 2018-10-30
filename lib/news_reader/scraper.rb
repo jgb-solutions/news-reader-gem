@@ -4,7 +4,7 @@ require 'nokogiri'
 
 class NewsReader::Scraper
     def self.fetch_articles
-        doc = Nokogiri::HTML(open("./fixtures/blog/index.html"))
+        doc = Nokogiri::HTML(open("http://www.loremipsum.biz/blog"))
         doc.css(".blog-post").map do |post|
             {
                 title: post.css("h2").text,
