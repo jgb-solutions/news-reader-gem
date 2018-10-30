@@ -31,6 +31,7 @@ class NewsReader::CLI
         puts "   - Type `list` to list all the articles"
         puts "   - Type `read` to read an article"
         puts "   - Type `about` to know more about #{APP_NAME}"
+        puts "   - Type `exit` to exit the app."
         puts "-"
     end
 
