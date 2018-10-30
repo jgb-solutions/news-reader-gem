@@ -43,7 +43,7 @@ class NewsReader::Article
                 puts "------ #{article.title} ------"
                 puts "-- Date Published: #{article.date}"
                 puts "-- Article Text: #{article.text}"
-                puts "-- Ctr/Alt + click #{article.url} to go to the article page."
+                puts "-- Ctr/Alt + click http://www.loremipsum.biz/blog#{article.url} to go to the article page."
                 puts "------ ------ ------ ------ ------"
                 self.menu
             end

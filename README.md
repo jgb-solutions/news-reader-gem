@@ -22,8 +22,21 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+To use the gem you have to require it in your project like so:
+- Go to your projects folder
+- Create a folder to try the gem `mkdir -p /your/project/folder/news-reader` & `cd` into it
+- In your terminal type `echo "gem 'news_reader'" > Gemfile`
+- Then type `bundle install --path vendor`
+- Create ruby test file with `touch test.rb`
+- Add this code in your `ruby` file:
+    ```ruby
+    require "bundler/setup"
+    require 'news_reader'
 
+    NewsReader::CLI.start
+    ```
+- Now run the program with `ruby test.rb`
+- Have fun!
 ## Development
 
 To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
