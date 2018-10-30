@@ -1,6 +1,6 @@
 require 'open-uri'
 require 'nokogiri'
-require 'pry'
+# require 'pry'
 
 class NewsReader::Scraper
     def self.fetch_articles
